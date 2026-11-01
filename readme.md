@@ -309,21 +309,13 @@ simplifica as derivadas. A métrica MSE utilizada na avaliação é calculada
 separadamente e não altera as actualizações do treino.
 
 $$
-J(\theta_0,\theta_1)
-=
-\frac{1}{2m}
-\sum_{i=1}^{m}
-(\hat{y}_i-y_i)^2
+J(\theta_0,\theta_1)=\frac{1}{2m}\sum_{i=1}^{m}(\hat{y}_i-y_i)^2
 $$
 
 Substituindo a função de previsão:
 
 $$
-J(\theta_0,\theta_1)
-=
-\frac{1}{2m}
-\sum_{i=1}^{m}
-(\theta_0+\theta_1x_i-y_i)^2
+J(\theta_0,\theta_1)=\frac{1}{2m}\sum_{i=1}^{m}(\theta_0+\theta_1x_i-y_i)^2
 $$
 
 O erro é elevado ao quadrado para impedir que erros positivos e negativos se anulem e para penalizar mais os erros de maior magnitude.
@@ -350,19 +342,13 @@ $$
 ### Derivada parcial em relação ao intercepto
 
 $$
-\frac{\partial J}{\partial \theta_0}
-=
-\frac{1}{m}
-\sum_{i=1}^{m}(\hat{y}_i-y_i)
+\frac{\partial J}{\partial \theta_0} = \frac{1}{m}\sum_{i=1}^{m}(\hat{y}_i-y_i)
 $$
 
 ### Derivada parcial em relação à inclinação
 
 $$
-\frac{\partial J}{\partial \theta_1}
-=
-\frac{1}{m}
-\sum_{i=1}^{m}(\hat{y}_i-y_i)x_i
+\frac{\partial J}{\partial \theta_1} = \frac{1}{m}\sum_{i=1}^{m}(\hat{y}_i-y_i)x_i
 $$
 
 ### Actualização dos parâmetros
@@ -456,19 +442,13 @@ Para utilizar quilometragens reais no `predict.py`, foi necessário converter os
 Substituindo a normalização:
 
 $$
-\hat{y}
-=
-b_0+b_1\left(\frac{x-\mu}{\sigma}\right)
+\hat{y}=b_0+b_1\left(\frac{x-\mu}{\sigma}\right)
 $$
 
 Reorganizando:
 
 $$
-\hat{y}
-=
-\left(b_0-\frac{b_1\mu}{\sigma}\right)
-+
-\left(\frac{b_1}{\sigma}\right)x
+\hat{y}=\left(b_0-\frac{b_1\mu}{\sigma}\right)+\left(\frac{b_1}{\sigma}\right)x
 $$
 
 Assim:
@@ -531,9 +511,7 @@ As chaves utilizadas no código têm de corresponder exactamente às chaves pres
 ### Função de previsão
 
 $$
-\widehat{price}
-=
-\theta_0+\theta_1 \times km
+\widehat{price} = \theta_0 + \theta_1 \times km
 $$
 
 A previsão é calculada com os parâmetros já convertidos para a escala original.
