@@ -304,7 +304,7 @@ Como a inclinação aprendida é negativa, o modelo representa uma associação 
 ### Função de custo utilizada no treino
 
 O código calcula os gradientes utilizando a função de custo com o factor
-\(\frac{1}{2m}\). Este factor \(1/2\) é uma convenção matemática que
+$\frac{1}{2m}$. Este factor $1/2$ é uma convenção matemática que
 simplifica as derivadas. A métrica MSE utilizada na avaliação é calculada
 separadamente e não altera as actualizações do treino.
 
@@ -381,7 +381,7 @@ $$
 \frac{\partial J}{\partial \theta_1}
 $$
 
-Onde \(\alpha\) representa a taxa de aprendizagem (*learning rate*).
+Onde $\alpha$ representa a taxa de aprendizagem (*learning rate*).
 
 ### Configuração utilizada
 
@@ -642,7 +642,7 @@ Corrigimos a indentação, colocando os acumuladores no início de cada epoch.
 
 ### 13.2 Factor 2 nas derivadas
 
-A implementação divide os acumuladores por \(m\):
+A implementação divide os acumuladores por $m$:
 
 ```python
 aux_theta_0 /= m
@@ -650,10 +650,10 @@ aux_theta_1 /= m
 ```
 
 Isto corresponde às derivadas da função de custo
-\(\frac{1}{2m}\sum(\hat{y}_i-y_i)^2\). Não é utilizado o factor \(2/m\),
-porque o factor \(1/2\) da função de custo cancela o \(2\) resultante da
+$\frac{1}{2m}\sum(\hat{y}_i-y_i)^2$. Não é utilizado o factor $2/m$,
+porque o factor $1/2$ da função de custo cancela o $2$ resultante da
 derivação. A MSE apresentada na avaliação continua a ser calculada como
-\(\frac{1}{n}\sum(\hat{y}_i-y_i)^2\).
+$\frac{1}{n}\sum(\hat{y}_i-y_i)^2$.
 
 ### 13.3 Parâmetros normalizados
 
