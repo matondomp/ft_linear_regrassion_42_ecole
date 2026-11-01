@@ -254,10 +254,10 @@ $$
 
 Onde:
 
-- \(x_i\): quilometragem original;
-- \(\mu_{\text{train}}\): média das quilometragens de treino;
-- \(\sigma_{\text{train}}\): desvio-padrão das quilometragens de treino;
-- \(z_i\): quilometragem normalizada.
+- $x_i$: quilometragem original;
+- $\mu_{\text{train}}$: média das quilometragens de treino;
+- $\sigma_{\text{train}}$: desvio-padrão das quilometragens de treino;
+- $z_i$: quilometragem normalizada.
 
 ### Estatísticas utilizadas
 
@@ -290,10 +290,10 @@ $$
 
 Onde:
 
-- \(\hat{y}\): preço estimado;
-- \(x\): quilometragem;
-- \(\theta_0\): intercepto;
-- \(\theta_1\): inclinação da recta.
+- $\hat{y}$: preço estimado;
+- $x$: quilometragem;
+- $\theta_0$: intercepto;
+- $\theta_1$: inclinação da recta.
 
 O intercepto representa o valor previsto quando a quilometragem é zero.
 
@@ -347,7 +347,7 @@ $$
 e_i = \hat{y}_i-y_i
 $$
 
-### Derivada parcial em relação a \(\theta_0\)
+### Derivada parcial em relação ao intercepto
 
 $$
 \frac{\partial J}{\partial \theta_0}
@@ -356,7 +356,7 @@ $$
 \sum_{i=1}^{m}(\hat{y}_i-y_i)
 $$
 
-### Derivada parcial em relação a \(\theta_1\)
+### Derivada parcial em relação à inclinação
 
 $$
 \frac{\partial J}{\partial \theta_1}
